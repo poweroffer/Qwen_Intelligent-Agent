@@ -1,0 +1,20 @@
+Index: tools/choose_yingyong.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pyautogui\r\nimport time\r\nimport pyperclip\r\nfrom PIL import ImageGrab\r\nimport cv2\r\nimport numpy as np\r\nfrom utils.screen_souss import find_guge_sous_on_screen,find_noneprompt_on_screen,find_theme_on_screen\r\n\r\n\r\ndef choose_all_app(name:str):\r\n    pyautogui.press('winleft')\r\n    pyperclip.copy(name)\r\n    pyautogui.hotkey('ctrl', 'v')\r\n    time.sleep(1)\r\n    try:\r\n        x, y = find_noneprompt_on_screen()\r\n        print(\"未找到\")\r\n    except:\r\n        print(\"找到了\")\r\n        pyautogui.click(966, 696)\r\n\r\ndef play_music(name,app=\"音乐\"):\r\n    choose_all_app(app)\r\n    try:\r\n        x,y = find_guge_sous_on_screen()\r\n        print(\"找到\")\r\n    except:\r\n        try:\r\n            print(\"没找到\")\r\n            x_1,y_2 = find_theme_on_screen()\r\n            pyautogui.click(x_1,y_2)\r\n            time.sleep(1)\r\n            location = pyautogui.locateOnScreen('../tutample/theme_use.png')  # 查找屏幕上按钮的位置\r\n            if location:\r\n                pyautogui.click(location)\r\n            time.sleep(1)\r\n            x, y = find_guge_sous_on_screen()\r\n        except:\r\n            return {\"status\":\"error\",\"content\":\"更换主题失败\"}\r\n    pyautogui.click(x,y)\r\n    time.sleep(0.5)\r\n    pyautogui.hotkey('ctrl', 'a')\r\n    pyautogui.press('backspace')\r\n    pyperclip.copy(name)\r\n    pyautogui.hotkey('ctrl', 'v')\r\n    pyautogui.press('enter')\r\n\r\nif __name__ == '__main__':\r\n    # choose_all_app(\"音乐\")\r\n    print(play_music(\"爱你没差\", app=\"音乐\"))
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tools/choose_yingyong.py b/tools/choose_yingyong.py
+--- a/tools/choose_yingyong.py	(revision 5c296aea0674f151ba4cef8ce9771d1c7ca5432f)
++++ b/tools/choose_yingyong.py	(date 1760970250852)
+@@ -46,5 +46,5 @@
+     pyautogui.press('enter')
+ 
+ if __name__ == '__main__':
+-    # choose_all_app("音乐")
+-    print(play_music("爱你没差", app="音乐"))
+\ No newline at end of file
++    choose_all_app("音乐")
++    # print(play_music("爱你没差", app="音乐"))
+\ No newline at end of file
