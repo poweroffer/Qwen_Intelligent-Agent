@@ -37,3 +37,5 @@ if __name__ == '__main__':
     llm = model.get_line_model()
     res = llm.invoke("hello world, 用一句中文诗词回答，只返回答案，不要解释。")
     print(res.content)
+    asr = model.get_asr_model()
+    res = asr.invoke()
