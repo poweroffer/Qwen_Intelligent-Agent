@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="baa7de3c-1407-4443-b27a-949c889a4f20" name="Changes" comment="llm-test-xyl-2025/10/20/22:53">
+      <change afterPath="$PROJECT_DIR$/models/asr_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/model_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_management.py" afterDir="false" />
     </list>
@@ -56,6 +58,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.asr_model.executor": "Run",
     "Python.choose_yingyong.executor": "Run",
     "Python.model_management.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
