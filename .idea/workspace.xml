@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="baa7de3c-1407-4443-b27a-949c889a4f20" name="Changes" comment="llm-test-xyl-2025/10/20/22:53">
-      <change afterPath="$PROJECT_DIR$/models/asr_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="baa7de3c-1407-4443-b27a-949c889a4f20" name="Changes" comment="llm-test-xyl-2025/10/22/14:21">
+      <change afterPath="$PROJECT_DIR$/FastMCP/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastMCP/mcp_service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FastMCP/mcp_service/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_management.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +61,11 @@
     "Python.asr_model.executor": "Run",
     "Python.choose_yingyong.executor": "Run",
     "Python.model_management.executor": "Run",
+    "Python.server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "model",
-    "last_opened_file_path": "D:/Programming/Qwen_Intelligent-Agent",
+    "last_opened_file_path": "D:/Programming/Qwen_Intelligent-Agent/FastMCP_test/mcp_service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,8 +76,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\Qwen_Intelligent-Agent\FastMCP_test\mcp_service" />
+      <recent name="D:\Programming\Qwen_Intelligent-Agent\FastMCP" />
       <recent name="D:\Programming\Qwen_Intelligent-Agent" />
       <recent name="D:\Programming\Qwen_Intelligent-Agent\models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Qwen_Intelligent-Agent\FastMCP\mcp_service" />
+      <recent name="D:\Programming\Qwen_Intelligent-Agent" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -96,6 +103,7 @@
       <updated>1760969133623</updated>
       <workItem from="1760969135386" duration="735000" />
       <workItem from="1760969882343" duration="353000" />
+      <workItem from="1761114613923" duration="521000" />
     </task>
     <task id="LOCAL-00001" summary="pycharm-连接测试-xyl">
       <option name="closed" value="true" />
@@ -133,6 +141,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="llm-test-xyl-2025/10/20/22:53" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Qwen_Intelligent_Agent$asr_model.coverage" NAME="asr_model Coverage Results" MODIFIED="1761113989761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/Qwen_Intelligent_Agent$choose_yingyong.coverage" NAME="choose_yingyong Coverage Results" MODIFIED="1760970296592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/Qwen_Intelligent_Agent$model_management.coverage" NAME="model_management Coverage Results" MODIFIED="1760971998435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
   </component>
