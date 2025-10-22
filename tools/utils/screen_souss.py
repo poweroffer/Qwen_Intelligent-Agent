@@ -5,7 +5,6 @@ from PIL import ImageGrab
 import cv2
 import numpy as np
 from .setting import screen_height,screen_width
-time.sleep(2)  # 给你2秒时间切换到桌面
 def find_guge_on_screen(threshold=0.8):
     """
     在屏幕上查找模板图片位置
